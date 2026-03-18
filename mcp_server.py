@@ -1,5 +1,5 @@
 """
-MCP server for Project Memory.
+MCP server for Memla.
 
 Exposes the memory system as MCP tools so any agent framework
 (CrewAI, LangGraph, AutoGen, Claude Desktop, Cursor) can connect.
@@ -111,7 +111,7 @@ def _chunk_to_dict(c: Any) -> dict:
 
 # ── MCP Server ───────────────────────────────────────────────────
 
-mcp = FastMCP("Project Memory")
+mcp = FastMCP("Memla")
 
 
 # ── Tools ────────────────────────────────────────────────────────
@@ -408,7 +408,7 @@ def memory_chunks_for_agent(agent_id: str) -> str:
 if __name__ == "__main__":
     import argparse
 
-    p = argparse.ArgumentParser(description="Project Memory MCP Server")
+    p = argparse.ArgumentParser(description="Memla MCP Server")
     p.add_argument("--transport", choices=["stdio", "http"], default="stdio")
     p.add_argument("--port", type=int, default=8766)
     p.add_argument("--agent_id", default=os.environ.get("MEMORY_AGENT_ID", "default"))
