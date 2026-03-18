@@ -1,4 +1,4 @@
-# Project Memory
+# Memla
 
 **The memory layer for AI — for humans and agents.**
 
@@ -102,7 +102,7 @@ python -m memory_system.main --model gpt-4o-mini --db ./memory.sqlite
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│  Project Memory          [model picker]    [New Session] │
+│  Memla                   [model picker]    [New Session] │
 ├───────────────────┬─────────────────────────────────────┤
 │                   │  Pinned: [fact: Byron] [note: ROAS] │
 │   Memory Graph    │                                     │

@@ -2,7 +2,4 @@ __pycache__/
 *.pyc
 .venv/
 memory.sqlite
-*.sqlite-wal
-*.sqlite-shm
-*.sqlite-journal
 adapters/
