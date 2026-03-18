@@ -16,7 +16,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Run (one command)
+## Run (CLI chat)
 
 ### Local (Ollama)
 
@@ -43,6 +43,21 @@ export LLM_API_KEY="YOUR_KEY"
 export LLM_BASE_URL="https://api.openai.com"
 python -m memory_system.main --model gpt-4o-mini --db ./memory.sqlite --user_id default
 ```
+
+## Run the web UI
+
+There’s also a lightweight **FastAPI + vanilla JS** frontend:
+
+```bash
+python app.py --model qwen3.5:4b --port 8765
+```
+
+Then open `http://localhost:8765` in your browser.
+
+The web app:
+- streams responses,
+- shows retrieved memories per turn,
+- lets you send **explicit feedback** on answers (good/bad) that trains the retrieval adapter in the background.
 
 ## One working demo (persistence)
 
