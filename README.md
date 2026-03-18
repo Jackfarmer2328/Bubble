@@ -29,8 +29,8 @@ Works with **Ollama** (local), **Anthropic** (Claude), or **OpenAI-compatible AP
 **Prerequisites:** Python 3.11+, Ollama running locally
 
 ```bash
-git clone https://github.com/YoSazo/Project-Memory.git
-cd Project-Memory
+git clone https://github.com/Jackfarmer2328/Memla.git
+cd Memla
 pip install -r requirements.txt
 ```
 
@@ -196,7 +196,7 @@ This means a researcher agent's discoveries about API patterns strengthen the co
 ## Project structure
 
 ```
-Project-Memory/
+Memla/
 ├── app.py                          # Web UI server (FastAPI + SSE streaming)
 ├── mcp_server.py                   # MCP server for agents (FastMCP, stdio/HTTP)
 ├── static/index.html               # Frontend (D3 graph + chat)
