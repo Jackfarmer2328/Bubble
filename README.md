@@ -100,24 +100,7 @@ python -m memory_system.main --model gpt-4o-mini --db ./memory.sqlite
 
 ## The interface
 
-```
-┌─────────────────────────────────────────────────────────┐
-│  Memla                   [model picker]    [New Session] │
-├───────────────────┬─────────────────────────────────────┤
-│                   │  Pinned: [fact: Byron] [note: ROAS] │
-│   Memory Graph    │                                     │
-│   (D3 force)      │  You: what should I do differently  │
-│                   │       next month?                    │
-│   ● facts         │                                     │
-│   ● decisions     │  Assistant: Based on the Byron      │
-│   ● entities      │  Creative and campaign fatigue data  │
-│   ● notes         │  you highlighted...                  │
-│   ━━ your links   │                                     │
-│                   ├─────────────────────────────────────┤
-│  [search memories]│  [message input...          ] [Send] │
-│                   │  [👍 Good] [👎 Bad] [Recall] [Clear] │
-└───────────────────┴─────────────────────────────────────┘
-```
+![Memla UI](assets/memla-ui.png)
 
 **Graph interactions:**
 - **Click** a node → pin it as context (purple glow, appears as chip above input)
@@ -196,7 +179,7 @@ This means a researcher agent's discoveries about API patterns strengthen the co
 ## Project structure
 
 ```
-Memla/
+Project-Memory/
 ├── app.py                          # Web UI server (FastAPI + SSE streaming)
 ├── mcp_server.py                   # MCP server for agents (FastMCP, stdio/HTTP)
 ├── static/index.html               # Frontend (D3 graph + chat)
